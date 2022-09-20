@@ -1,0 +1,111 @@
+body {
+
+    text-align: center;
+    background-color: black;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.clock {
+
+    margin: 10rem auto;
+    border: 7px solid rgba(53, 97, 133, 0.71);
+    position: relative;
+    border-radius: 50%;
+    width: 600px;
+    height: 600px;
+}
+
+.vertical-line,
+.horizontal-line {
+    width: 90%;
+    height: 8px;
+    margin: auto 20px;
+    top: 18rem;
+    background-color: rgba(53, 97, 133, 0.71);
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+.horizontal-line {
+    top: 17.5rem;
+    margin-left: 30px;
+    transform: none;
+}
+
+[class*="clock-line"] {
+    background-color: rgba(255, 140, 0, 0.71);;
+    width: 90%;
+    margin: auto 30px;
+    height: 3px;
+    position: absolute;
+    top: 18rem;
+}
+
+.clock-line-1 {
+    transform: rotate(30deg);
+}
+
+.clock-line-2 {
+    transform: rotate(60deg);
+}
+
+.clock-line-3 {
+    transform: rotate(120deg);
+}
+
+.clock-line-4 {
+    transform: rotate(150deg);
+}
+
+.hands-circle {
+    background-color: black;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    position: absolute;
+    top: 5.5rem;
+    left: 5.5rem;
+}
+
+
+
+#hour,
+#minute,
+#second {
+    position: absolute;
+
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+
+#hour {
+    width: 1.8%;
+    height: 25%;
+    top: 25%;
+    background: rgba(53, 97, 133, 0.71);
+    left: 48%;
+    opacity: 1;
+}
+
+#minute {
+    width: 1.6%;
+    height: 30%;
+    top: 19%;
+    background: rgba(36, 200, 55, 0.71);
+    left: 48%;
+    opacity: 0.8;
+}
+
+#second {
+    width: 1%;
+    height: 40%;
+    background: rgba(255, 140, 0, 0.71);
+    top: 9%;
+    left: 48%;
+    opacity: 0.8;
+}
